@@ -1,4 +1,10 @@
 "use strict";
 
-console.log("Hello World from main.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files.");
+console.log('hello, chello week 5 web dev');
+setTimeout(function () {
+  var sub = document.getElementById("subscribe");
+  sub.classList.add("show");
+  var subName = document.getElementById("sub-name");
+  subName.focus();
+}, 3000);
 //# sourceMappingURL=main.js.map

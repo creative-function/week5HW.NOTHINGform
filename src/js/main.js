@@ -1,3 +1,9 @@
-console.log(`Hello World from main.js! 
-Change this message, and make sure it changes in the browser 
-to verify that you're working in the right files.`)
+console.log('hello, chello week 5 web dev');
+
+setTimeout(function(){
+    let sub = document.getElementById("subscribe");
+    sub.classList.add("show");
+
+    let subName = document.getElementById("sub-name");
+    subName.focus();
+}, 3000)
