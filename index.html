@@ -17,40 +17,75 @@
 
 
 		<form id="survey">
-			<label>WE VALUE YOUR OPNION</label>
-			<label for="name">Your Name:</label>
-			<input type="text" name="name" placeholder="enter your name"></input>
-			<label for="email">Your Email:</label>
-			<input type="email" name="email" placeholder="you@example.com"></input>
-			<div class="radio-questions">
-				<label for="radio-questions">HOW DESIRABLE OF A PRODUCT DO YOU FIND NOTHING?</label>
-				<input type="radio" name="rating1" value="want" checked></input>
-				<label for="rating1">NOTHING is a great waste of time and money!</label>
-				<input type="radio" name="rating2" value="need"></input>
-				<label for="rating2">Yes, I'll give you money. I want NOTHING!</label>
-				<input type="radio" name="rating" value="other"></input>
-				<label for="rating3"> I am so hyped over NOTHING!</label>
-			</div>
-			<div class="checkbox-questions">
-				<label>WHO WILL YOU GIVE NOTHING TO?</label>
-				<input type="checkbox" name="answer1" value="Friend"></input>
-				<label for="answer1">My closest friend!</label>
-				<input type="checkbox" name="answer2" value="Family"></input>
-				<label for="answer2">My dearest family member</label>
-				<input type="checkbox" name="answer3" value="Enemy" ></input>
-				<label for="answer3"> My enemies.</label>
-				<input type="checkbox" name="answer4" value="Vegan"></input>
-				<label for="answer4">A bragging vegan</label>
-				<input type="checkbox" name="answer5" value="Boss"></input>
-				<label for="answer5">My boss/co-worker</label>
-				<input type="checkbox" name="answer6" value="Myself"></input> 
-				<label for="answer6">Myself. I deserve NOTHING.</label>
-			</div>
+			<a href="https://www.kickstarter.com/projects/muchmore/nothing-in-a-one-of-a-kind-package/description" target="blank"><img class="img-nothing nothing-logo" src="dist/img/NOTHING_logo.jpg" alt="nothing-intro"></a>
+			<a href="https://www.kickstarter.com/projects/muchmore/nothing-in-a-one-of-a-kind-package/description" target="blank"><img class= "img-nothing" src="dist/img/NOTHING5.jpg" alt="nothing1"></a>
+			<p class="product-description">
+				Top of the line envelope of <span class="prod-title">NOTHING</span>.This is as good as it gets. 
+				Deep charcoal toned, ultra heavy card stock has been pressed with a prismatic holographic foil, 
+				hand pressed with our stamp of quality, secured shut with tamper evident security stickers, individually numbered, and signed by hand.
+			</p>
+			<fieldset role="group" aria-labelledby="intro-user">
+				<legend  class="section" id="intro-user">PLEASE TELL US ABOUT YOURSELF</legend>
+				
+				<label for="name">Your Name:</label>
+				<input type="text" id="name" name="name" placeholder="enter your name"></input>
+				
+				<label for="email">Your Email:</label>
+				<input type="email" id="email" name="email" placeholder="you@example.com"></input>
+			</fieldset>
 
-			<div class="text-question">
-				<label>TELL US HOW TO DO NOTHING BETTER</label>
-				<textarea class="text-answer">Some text...</textarea>
-			</div>
+			<fieldset class="radio-questions" role="group" aria-labelledby="desireablity">
+				<legend class="section" id="desireablity"> PART: 1 HOW DESIRABLE IS <span class="prod-title"> NOTHING</span>?</legend>
+				<div>	
+					<input type="radio" name="desire" id="rating2" value="need"></input>
+					<label for="rating2"><span class="prod-title"> NOTHING</span> is a great waste of time and money!</label>
+				</div>
+				<div>
+					<input type="radio" name="desire" id="rating3" value="other"></input>
+					<label for="rating3">Yes, I'll give you money. I want <span class="prod-title"> NOTHING</span>!</label>
+				</div>
+				
+				<div>
+					<input type="radio" name="desire" id="rating4" value="other"></input>
+					<label for="rating4"> I am so hyped over <span class="prod-title"> NOTHING</span>!</label>
+				</div>
+
+
+			</fieldset>
+			<img class= "img-nothing2" src="dist/img/NOTHING1.jpg" alt="nothing2">
+			<fieldset class="checkbox-questions" role="group" aria-labelledby="sharing">
+				<legend  for="question-2" class="section"id="sharing">PART: 2 WHO WILL YOU GIVE NOTHING TO?</legend>
+				
+				<div>
+					<input type="checkbox" name="check1" id="answer1" value="Friend"></input>
+					<label for="answer1">My closest friend!</label>
+				</div>
+				<div>	
+					<input type="checkbox" name="check2" id="answer2" value="Family"></input>
+					<label for="answer2">My dearest family member.</label>
+				</div>
+				<div>	
+					<input type="checkbox" name="check3" id="answer3" value="Enemy" ></input>
+					<label for="answer3"> My enemies.</label>
+				</div>
+				<div>
+					<input type="checkbox" name="check4" id="answer4" value="Vegan"></input>
+					<label for="answer4">A bragging vegan.</label>
+				</div>
+				<div>
+					<input type="checkbox" name="check5" id="answer5" value="Boss"></input>
+					<label for="answer5">My boss/co-worker.</label>
+				</div>
+				<div>
+					<input type="checkbox" name="check6" id="answer6" value="Myself"></input> 
+					<label for="answer6">Myself. I deserve <span class="prod-title"> NOTHING!</span>.</label>
+				</div>
+			</fieldset>
+			<img class= "img-nothing" src="dist/img/NOTHING3.jpg" alt="nothing4">
+			<fieldset class="text-question" role="group" aria-labelledby="text-box">
+				<legend class="section" id="text-box" >PART: 3 TELL US HOW TO DO NOTHING BETTER</legend>
+				<textarea class="text-answer" id="text-answer">Give us your honest opinion about nothing...</textarea>
+			</fieldset>
 			
 			<button type="submit">SUBMIT</button>
 		</form>
@@ -60,3 +95,4 @@
 
 	</body>
 </html>
+

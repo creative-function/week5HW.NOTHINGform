@@ -14,7 +14,9 @@ TABLE OF CONTENTS:
 */
 
 /* 0. Reset ================================= */
-@import 'reset';
+// @import 'reset';
+
+$bkgrnd :rgb(162, 250, 216);
 
 
 /* 1. Main Layout ================================= */
@@ -23,30 +25,44 @@ TABLE OF CONTENTS:
 	box-sizing: border-box;
 }
 
-html,body{
-	height: 100%;;
-}
+
 
 body {
-	background: #ccc;
+	height: 100%;;
+	background: #000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+
+	.prod-title{
+		font-weight: bold;
+		font-size: 1.25em;
+		font-style:italic;
+		
+	}
 }
 
 input, button{
 	font-size: 10px;
 	padding: 6px;
-	margin:5px 0;
+	// margin:auto 0;
+
 }
 
-input[type=text]{
+input[type=text],input[type=email]{
 	width:100%;
 }
 
 
+legend{
+	
+	&.section{
+		font-weight: bold;
 
-
+	}
+}
 
 button{
 	align-self: center;
@@ -63,46 +79,48 @@ form{
 	padding:10px;
 }
 
-
-.radio-questions{
-	background-color: yellow;
-	display: flex;
-	flex-direction: column;
-	padding:25px;
-	widows: 100%;
-
-	input[type=radio]{
-		width:10%;
-		position: relative;
-		left:-7%;
-		top:15%;
-		
-	}
-	
+.product-description{
+	margin:20px;
 }
 
-.checkbox-questions{
-	background-color: orange;
-	display:flex;
-	flex-direction: column;
-	padding:20px;
-	width: 100%;
-	
-	input[type=checkbox]{
-		width:10%;
-		position: relative;
-		left:-7%;
-		top:6%;
-		
-	}
+.img-nothing{
+	width:100%;
 }
+
+fieldset{
+	background-color: $bkgrnd;
+}
+// .radio-questions{
+// 	background-color:$bkgrnd;
+// 	display: flex;
+// 	flex-direction: column;
+// 	padding:25px;
+// 	widows: 100%;
+	
+// 	div{
+// 		display: flex;
+// 		flex-direction: row;
+// 		align-items: center;
+// 	}
+// }
+
+// .checkbox-questions{
+// 	background-color: $bkgrnd;
+// 	display:flex;
+// 	flex-direction: column;
+// 	padding:20px;
+// 	width: 100%;
+	
+
+// }
 
 .text-question{
-	background-color: lightcoral;
+	background-color: $bkgrnd;
 	padding:20px;
 	width: 100%;	
 
 	.text-answer{
+		margin-top:15px;
 		width:100%;
 	}
 	
