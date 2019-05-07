@@ -92,7 +92,7 @@ input, button {
 	margin: 5px 0;
 }
 
-input {
+input[type=text] {
 	width: 100%;
 }
 
@@ -111,6 +111,52 @@ form {
 	max-width: 600px;
 	border-radius: 4px;
 	padding: 10px;
+}
+
+.radio-questions {
+	background-color: yellow;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	padding: 25px;
+	widows: 100%;
+}
+
+.radio-questions input[type=radio] {
+	width: 10%;
+	position: relative;
+	left: -7%;
+	top: 15%;
+}
+
+.checkbox-questions {
+	background-color: orange;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	padding: 20px;
+	width: 100%;
+}
+
+.checkbox-questions input[type=checkbox] {
+	width: 10%;
+	position: relative;
+	left: -7%;
+	top: 6%;
+}
+
+.text-question {
+	background-color: lightcoral;
+	padding: 20px;
+	width: 100%;
+}
+
+.text-question .text-answer {
+	width: 100%;
 }
 
 /* 2. Content ================================= */

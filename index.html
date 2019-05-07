@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title> week 5- accessibility </title>
+		<title> Survey for NOTHING </title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,24 +14,44 @@
 	</head>
 	<body>
 
-		<section class="form-overlay">
 
-			<form id="subscribe">
-				<h1>SUBSCRIBE</h1>
-				<label for="sub-name">enter you profile name</label>
-				<input id="sub-name" type="text" name="subscribe-name" placeholder="enter your profile name"></input>
-				<label for="sub-email">enter you profile email</label>
-				<input id="sub-email" type="email" name="subscribe-email" placeholder="you@example.com"></input>
-				<button type="submit">SUBSCRIBE</button>
-			</form>
-		</section>
 
-		<form id="order">
-			<h1>ORDER</h1>
-			<label for="name">enter you name</label>
+		<form id="survey">
+			<label>WE VALUE YOUR OPNION</label>
+			<label for="name">Your Name:</label>
 			<input type="text" name="name" placeholder="enter your name"></input>
-			<label for="email">enter you email</label>
+			<label for="email">Your Email:</label>
 			<input type="email" name="email" placeholder="you@example.com"></input>
+			<div class="radio-questions">
+				<label for="radio-questions">HOW DESIRABLE OF A PRODUCT DO YOU FIND NOTHING?</label>
+				<input type="radio" name="rating1" value="want" checked></input>
+				<label for="rating1">NOTHING is a great waste of time and money!</label>
+				<input type="radio" name="rating2" value="need"></input>
+				<label for="rating2">Yes, I'll give you money. I want NOTHING!</label>
+				<input type="radio" name="rating" value="other"></input>
+				<label for="rating3"> I am so hyped over NOTHING!</label>
+			</div>
+			<div class="checkbox-questions">
+				<label>WHO WILL YOU GIVE NOTHING TO?</label>
+				<input type="checkbox" name="answer1" value="Friend"></input>
+				<label for="answer1">My closest friend!</label>
+				<input type="checkbox" name="answer2" value="Family"></input>
+				<label for="answer2">My dearest family member</label>
+				<input type="checkbox" name="answer3" value="Enemy" ></input>
+				<label for="answer3"> My enemies.</label>
+				<input type="checkbox" name="answer4" value="Vegan"></input>
+				<label for="answer4">A bragging vegan</label>
+				<input type="checkbox" name="answer5" value="Boss"></input>
+				<label for="answer5">My boss/co-worker</label>
+				<input type="checkbox" name="answer6" value="Myself"></input> 
+				<label for="answer6">Myself. I deserve NOTHING.</label>
+			</div>
+
+			<div class="text-question">
+				<label>TELL US HOW TO DO NOTHING BETTER</label>
+				<textarea class="text-answer">Some text...</textarea>
+			</div>
+			
 			<button type="submit">SUBMIT</button>
 		</form>
 
