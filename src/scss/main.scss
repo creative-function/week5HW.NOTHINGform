@@ -76,6 +76,7 @@ form{
 	background: white;
 	max-width: 600px;
 	border-radius: 4px;
+	
 	padding:10px;
 }
 
@@ -89,6 +90,9 @@ form{
 
 fieldset{
 	background-color: $bkgrnd;
+	border:none;
+	border-top:1px solid;
+	
 }
 // .radio-questions{
 // 	background-color:$bkgrnd;
@@ -110,7 +114,6 @@ fieldset{
 // 	flex-direction: column;
 // 	padding:20px;
 // 	width: 100%;
-	
 
 // }
 

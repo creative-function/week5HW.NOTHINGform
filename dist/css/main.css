@@ -77,6 +77,8 @@ form {
 
 fieldset {
 	background-color: #a2fad8;
+	border: none;
+	border-top: 1px solid;
 }
 
 .text-question {
